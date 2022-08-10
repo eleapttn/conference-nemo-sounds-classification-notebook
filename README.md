@@ -5,9 +5,10 @@ Notebook for data processind and AI model training.
 ## Data
 
 ```console
-├── dataset
-    └── audios
+├── data
+    └── marine-mammal-sound-test1.wav
     └── data.csv
+    └── ai-model
 ```
 
 ## Launch it with AI Notebooks 
@@ -16,5 +17,5 @@ Notebook for data processind and AI model training.
 ovhai notebook run one-for-all jupyterlab \
 	--name nemo-notebook \
 	--gpu 1 \
-	--volume dataset_marine_song@GRA/:/workspace/dataset:RW:cache
+	--volume nemo-data@GRA/:/workspace/data:RW:cache
 ```
